@@ -1,0 +1,254 @@
+body{
+    font-family: helvetica, sans-serif;
+    background-color: #dbdfc3;
+}
+
+/*--------------text-------------*/
+
+h2 {
+    font-size: 50px;
+    color: #b87333;
+    font-weight: 900;
+    font-family: 'Tangerine', cursive;
+}
+
+h3 {
+    font-size: 32px;
+    color: #b87333;
+    font-weight: 900;
+    font-family: 'Tangerine', cursive;
+}
+
+/*--------------a tags-------------*/
+a {
+  position: relative;
+  color: #b87333;
+  text-decoration: none;
+  font-family: 'Tangerine', cursive;
+  font-size: 30px;
+}
+
+a:hover {
+  color: #717171;
+}
+
+/* underline transition */
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #b3ecb3;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+span a {
+    color: #717171;
+}
+
+/*--------------header-------------*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 25px;
+    font-size: 18px;
+    background-color: #dbdfc3;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    border-bottom: 1px solid #b87333;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.us1 a{
+  color: #b87333;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 0 25px;
+    display: inline;
+}
+
+nav {
+    padding-right: 25px;
+}
+
+/* ---------- banner proposal -------*/
+.content {
+    display: flex;
+    min-width: 1366px;
+    
+}
+
+.proposal {
+    flex-direction: column;
+    height: 800px;
+    align-items: center;
+    background-image: url(images/CG020057.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 80px;
+    font-family: 'Tangerine', cursive;
+    background-color: #dbdfc3;
+}
+
+.proposal h1{
+    
+    font-size: 150px;
+    padding-top: 40px;
+    color: #b87333;
+    text-shadow: 1px 1px #333;
+    
+}
+
+.date{
+    font-size: 60px;
+    color: #dbdfc3;
+    text-shadow: 1px 1px #333;
+}
+
+
+/* ------- venue -------*/
+
+.venue {
+    display: flex;
+    background-color: #dbdfc3;
+}
+.venue img {
+    
+    flex-grow: 2;
+}
+
+.venue-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    background-color: #c5c8af;
+    text-align: left;
+    width: 100%;
+}
+
+/*-------- registery --------*/
+.registry {
+    height: 300px;
+    background-color: #F1f1f1;
+}
+
+/*-------- hotel --------*/
+#map {
+        height: 400px;
+        width: 50%;
+       }
+
+.hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 20px;
+    background-color: #dbdfc3;
+}
+
+.hotel h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.hotel h3{
+    padding-bottom: 10px;
+}
+
+.hotel-details{
+    flex-grow: 2;
+}
+.hotel-n-directions{
+    display: flex;
+}
+/* ------- visit -------*/
+
+.to-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 0px;
+    background-color: #f1f1f1;
+}
+
+#to-do-header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.visit {
+    display: flex;
+    justify-content: space-around;
+}
+.place {
+    border: 1px solid #b87333;
+    padding: 10px 10px 20px 10px;
+    background-color: #F4FEF4;
+    
+}
+
+.place p{
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: #b1b1b1;
+    line-height: 1.2;
+}
+
+.place a{
+    font-family: helvetica, sans-serif;
+    color: #717171;
+    font-size: 13px;
+}
+.place img{
+    width: 300px;
+    height: 300px;
+}
+
+.place-info{
+    width: 300px;
+}
+
+.place h3 {
+    padding: 10px 0;
+}
+
+
+
+/* ------- footer -------*/
+footer {
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    align-items: center;
+    padding-left: 25px;
+}
+
